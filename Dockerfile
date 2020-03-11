@@ -1,10 +1,8 @@
-FROM rocker/rstudio:3.6.3
+FROM rocker/rstudio:3.6.2
 
 ENV USER=rstudio
 ENV PASSWORD=qwerty
 
 VOLUME [ "/home" ]
 
-EXPOSE 8787:8787
-
-CMD ["R"]
+EXPOSE 8787
