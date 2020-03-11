@@ -7,5 +7,5 @@ It is a basic image. Packages will need to be installed.
 Launch it with
 
 ```
-$ docker run rstudio_base:t2
+$ docker run rstudio_base:t5
 ```
