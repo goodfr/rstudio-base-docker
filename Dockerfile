@@ -9,10 +9,10 @@ USER root
 # EXPOSE 8787
 
 # Install Impala ODBC dependency
-RUN cd /tmp && \
-    wget --no-verbose https://downloads.cloudera.com/connectors/impala_odbc_2.5.41.1029/Debian/clouderaimpalaodbc_2.5.41.1029-2_amd64.deb && \
-    dpkg -i clouderaimpalaodbc_2.5.41.1029-2_amd64.deb && \
-    odbcinst -i -d -f /opt/cloudera/impalaodbc/Setup/odbcinst.ini
+# RUN cd /tmp && \
+#     wget --no-verbose https://downloads.cloudera.com/connectors/impala_odbc_2.5.41.1029/Debian/clouderaimpalaodbc_2.5.41.1029-2_amd64.deb && \
+#     dpkg -i clouderaimpalaodbc_2.5.41.1029-2_amd64.deb && \
+#     odbcinst -i -d -f /opt/cloudera/impalaodbc/Setup/odbcinst.ini
 
 RUN mkdir /root/.R/
 RUN echo CXXFLAGS=-DBOOST_PHOENIX_NO_VARIADIC_EXPRESSION > /root/.R/Makevars
