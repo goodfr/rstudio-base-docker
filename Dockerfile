@@ -2,8 +2,8 @@ FROM rocker/rstudio:3.6.2
 
 ENV USER=rstudio
 ENV PASSWORD=qwerty
-
-USER root
+# to allow packages install rights to rstudio user
+ENV ROOT=true
 
 # VOLUME [ "/home" ]
 # EXPOSE 8787
